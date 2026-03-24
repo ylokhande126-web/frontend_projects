@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+
+}
+
+.main_box{
+  background: url(photo.jpg);
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+}
+
+.btn_one{
+  color: white;
+  font-size:40px;
+  font-weight: 70%;
+  position: absolute;
+  left: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.sidebar_menu{
+  position: fixed;
+  height: 100dvh;
+  width: 400px;
+  background-color: rgb(255,255,255,0.1);
+  box-shadow:0 0 6px rgb(255,255,255,0.5) ;
+  left: -450px;
+  transition: all 0.2s linear;
+  backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+.sidebar_menu .logo{
+  position: absolute;
+  width: 100%;
+  line-height: 60px;
+  box-shadow: 0 0 4px rgb(255,255,255,0.5);
+  height: 60px;
+}
+
+.sidebar_menu .logo a{
+  position: absolute;
+  font-size: 25px;
+  font-weight: 500px;
+  text-decoration: none;
+  left: 16%;
+  
+}
+.sidebar_menu .btn_two i{
+  font-size: 20px;
+  line-height: 20px;
+  position: absolute;
+  left: 360px;
+  top: 22px;
+  cursor:pointer;
+  transition: all 0.2s linear;
+
+}
+
+.sidebar_menu .menu{
+  color: white;
+  position: absolute;
+  width: 100%;
+  top: 80px;
+}
+
+.sidebar_menu .menu li{
+  margin-top: 6px;
+  padding: 20px 20px;
+}
+
+.sidebar_menu .menu i,
+a{
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sidebar_menu .menu i{
+  padding: 5px;
+}
+
+.sidebar_menu .social_media {
+  color: white;
+  opacity: 0.5;
+  position: absolute;
+  left: 25%;
+  bottom: 40px;
+}
+.sidebar_menu .social_media i{
+  margin: 5px;
+}
+
+#check{
+  display: none;
+}
+
+.sidebar_menu .menu li:hover{
+  box-shadow:0 0 6px rgb(255,255,255,0.5) ;
+}
+
+.btn_two i:hover {
+  font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover {
+    opacity: 1; /* This makes it fully visible */
+    transform: scale(1.1);
+    color: aqua;
+    transition: all 0.4s ease;
+}
+
+#check:checked ~ .sidebar_menu{
+  left: 0;
+}
+
+#check:checked ~ .btn_one i{
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
